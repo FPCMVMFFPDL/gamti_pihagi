@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>🍟감튀피하기🍟</title>
+
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #canvas_container {
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    canvas {
+      border: 1px solid black;
+      display: block;
+      margin: 0 auto;
+      touch-action: none;
+    }
+
+    #bgmBtn {
+      margin-top: 6px;
+      padding: 4px 10px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    #mobileControls {
+      margin-top: 10px;
+    }
+
+    #mobileControls button {
+      font-size: 28px;
+      width: 80px;
+      height: 50px;
+      margin: 0 10px;
+    }
+
+    .bgm-credit {
+      font-size: 12px;
+      color: gray;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>🍟감튀피하기🍟</h2>
+
+  <div id="canvas_container">
+    <canvas id="canvas" width="360" height="720"></canvas>
+
+    <button id="bgmBtn">🔊 BGM ON</button>
+
+    <div id="mobileControls">
+      <button id="btnLeft">◀</button>
+      <button id="btnRight">▶</button>
+    </div>
+
+    <div class="bgm-credit">
+      BGM: Rabbit House - 롯데리아 튀김 기계 소리 리믹스
+    </div>
+  </div>
+
+  <script src="scripts/load_sprites.js"></script>
+  <script src="scripts/game.js"></script>
+</body>
+</html>
