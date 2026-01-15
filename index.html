@@ -6,10 +6,11 @@
 
   <style>
     body {
-      text-align: center;
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background: #ffc536;
     }
 
     #canvas_container {
@@ -18,17 +19,27 @@
     }
 
     canvas {
-      border: 1px solid black;
       display: block;
       margin: 0 auto;
+      background: #ffffff;
+      border: 2px solid #000;
       touch-action: none;
     }
 
     #bgmBtn {
       margin-top: 6px;
-      padding: 4px 10px;
+      padding: 6px 14px;
       font-size: 14px;
+      border-radius: 6px;
+      border: none;
       cursor: pointer;
+      background: #e80028;
+      color: #ffffff;
+    }
+
+    #bgmBtn.off {
+      background: #cccccc;
+      color: #333333;
     }
 
     #mobileControls {
@@ -36,16 +47,20 @@
     }
 
     #mobileControls button {
-      font-size: 28px;
       width: 80px;
       height: 50px;
+      font-size: 28px;
       margin: 0 10px;
+      border-radius: 8px;
+      border: none;
+      background: #e80028;
+      color: #ffffff;
     }
 
     .bgm-credit {
       font-size: 12px;
-      color: gray;
-      margin-top: 4px;
+      color: #3b2d0c;
+      margin-top: 6px;
     }
   </style>
 </head>
